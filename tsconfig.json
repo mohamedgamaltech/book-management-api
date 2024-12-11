@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                           // Target modern JavaScript version
+    "module": "CommonJS",                         // Use CommonJS module system (for Node.js)
+    "moduleResolution": "node",                   // Resolve modules using Node.js style
+    "strict": true,                               // Enable strict type checking for safety
+    "esModuleInterop": true,                      // Allow default imports from CommonJS modules
+    "skipLibCheck": true,                         // Skip type-checking of library files for faster builds
+    "forceConsistentCasingInFileNames": true,     // Ensure consistent casing in file names
+    "resolveJsonModule": true,                    // Enable importing JSON files as modules
+    "experimentalDecorators": true,               // Enable decorators (if you plan to use them)
+    "emitDecoratorMetadata": true,                // Emit metadata for decorators (if needed)
+    "noEmit": false,                              // Allow emitting JavaScript files from TypeScript
+    "strictPropertyInitialization": false,        // Disable strict property initialization check
+    "outDir": "./dist",  
+    "rootDir": "./src", 
+    "baseUrl": "./"
+  },
+  "include": ["src/**/*.ts"],                     // Include all TypeScript files in the src folder
+  "exclude": ["node_modules", "dist"]             // Exclude the node_modules and dist folders
+}
